@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+html{
+    font-size: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: #d8d8d8;
+}
+
+.icon{
+    width: 20rem;
+}
+
+.contact-container .contact-form button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+    width: 130px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: rgb(193,194,198);
+background: linear-gradient(90deg, rgba(193,194,198,1) 0%, rgba(186,104,200,1) 100%);
+}
+
+.contact-container .contact-form button img{
+    width: 1rem;
+}
+
+h2{
+    color: #BA68C8;
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 8px 0;
+}
+
+h2::after{
+    content: '';
+    display: flex;
+    border-bottom: 4px solid;
+    transform-origin: left;
+    padding: 2px;
+    width: 50px;
+    
+}
+
+.contact-container{
+width: 100vw;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.contact-form{
+    display: flex;
+    gap: 18rem;
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.contact-name, .contact-email, .contact-message{
+    padding: 16px;
+    border-radius: 10px;
+    border: none;
+    width: 20rem;
+    
+}
+
+
+@media (max-width: 760px) {
+    .icon{
+        display: none;
+    }
+}
+
+
+
